@@ -55,7 +55,7 @@ body {
 }
 
 #hero-title {
-    font-size: clamp(1.75rem, 3vw + 1rem, 3.5rem);
+    font-size: clamp(1.75rem, 5vw + 1rem, 3.5rem);
     font-weight: 700;
     line-height: 120%;
     color: var(--tb900);
@@ -135,6 +135,10 @@ body {
     height: 600px;
 }
 
+.phone-mockups-tablet {
+    display: none;
+}
+
 /* Top Right Background Image */
 
 .top-right-bg {
@@ -152,6 +156,10 @@ body {
     z-index: -5;
 }
 
+.top-right-bg, .bottom-left-bg {
+    overflow: hidden;
+}
+
 /* Bottom Stat Bar */
 #bottom-bar {
     background: var(--tb700);
@@ -163,7 +171,7 @@ body {
 
 #bottom-bar-wrapper {
     width: 100%;
-    max-width: 1076px;
+    max-width: 1300px;
     display: flex;
     justify-content: space-between;
 }
@@ -171,6 +179,7 @@ body {
 .stat-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .top-stat {
@@ -182,5 +191,97 @@ body {
 .bottom-stat {
     font-size: 1.375rem;
     color: var(--tb50);
-    font-weight: 500;
+    font-weight: 400;
+}
+
+/* Tablet / Mobile Stat Bar */
+#bottom-bar-tablet {
+    display: none;
+}
+
+/* Responsive Stuff */
+
+/* Hero Section */
+@media screen and (max-width: 1025px) {
+    body {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    /* Makes hero content column */
+    #hero {
+        padding-top: 54px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 56px;
+    }
+
+    /* Makes left / top text column wider and centers items in it */
+    .left-column {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero-title {
+        width: 75%;
+    }
+
+    .three-ways-container {
+        justify-content: center;
+    }
+
+    .search-form {
+        justify-content: center;
+    }
+
+    .search-input, .search-button {
+        width: 320px;
+    }
+
+    /* Image Stuff - hides desktop image and shows tablet image */
+    .phone-mockups-tablet {
+        display: inline;
+    }
+
+    .phone-mockups {
+        display: none;
+    }
+
+    .top-right-bg {
+        width: 50%;
+    }
+
+    /* Bottom Stat Bar */
+    #bottom-bar {
+        display: none;
+    }
+
+    #bottom-bar-tablet {
+        display: flex;
+        margin-bottom: 40px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #bottom-bar-wrapper-tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        align-content: stretch;
+        width: 100%;
+    }
+
+    .stat-container {
+        background: var(--tb700);
+        border-radius: 8px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
 }
