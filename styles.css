@@ -101,7 +101,7 @@ body {
 
 .search-input {
     padding: 18px 20px 18px 40px;
-    font-size: 16px;
+    font-size: 1rem;
     border: 1px solid var(--grey);
     border-radius: 6px;
     background: transparent;
@@ -202,8 +202,8 @@ body {
 
 /* Responsive Stuff */
 
-/* Hero Section */
-@media screen and (max-width: 1025px) {
+/* Tablet Section */
+@media screen and (max-width: 1025px)  {
     body {
         height: 100%;
         margin-bottom: 0;
@@ -216,6 +216,7 @@ body {
         align-items: center;
         gap: 40px;
         margin-bottom: 56px;
+
     }
 
     /* Makes left / top text column wider and centers items in it */
@@ -224,10 +225,11 @@ body {
         max-width: 100%;
         justify-content: center;
         align-items: center;
+        margin-bottom: 56px;
     }
 
     #hero-title {
-        width: 75%;
+        width: 85%;
     }
 
     #hero-subtitle {
@@ -236,6 +238,15 @@ body {
 
     .three-ways-container {
         justify-content: center;
+    }
+
+    .three-ways {
+        background: var(--tb700);
+        padding: 12px 24px;
+        border-radius: 4px;
+        width: 280px;
+        color: var(--tb50);
+        gap: 12px;
     }
 
     .search-form {
@@ -259,6 +270,10 @@ body {
         width: 50%;
     }
 
+    .bottom-left-bg {
+
+    }
+
     /* Bottom Stat Bar */
     #bottom-bar {
         display: none;
@@ -266,7 +281,7 @@ body {
 
     #bottom-bar-tablet {
         display: flex;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         width: 100%;
         padding-left: 40px;
         padding-right: 40px;
@@ -288,5 +303,68 @@ body {
         padding-top: 32px;
         padding-bottom: 32px;
     }
+}
 
+/* Mobile */
+
+@media screen and (max-width: 480px)  {
+    #header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #hero-title {
+        width: 100%;
+    }
+
+    .three-ways {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .three-way-icon {
+        height: 28px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .search-input, .search-button {
+        width: 100%;
+    }
+
+    .phone-mockups-tablet {
+        display: none;
+    }
+
+    .phone-mockups {
+        display: inline;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #bottom-bar-tablet {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+
+    .top-right-bg {
+        width: 70%;
+    }
+
+    .bottom-left-bg {
+        overflow: hidden !important;
+    }
 }
