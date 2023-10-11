@@ -293,7 +293,7 @@ body {
     }
 
     .bottom-left-bg {
-
+        bottom: -6px;
     }
 
     /* Bottom Stat Bar */
