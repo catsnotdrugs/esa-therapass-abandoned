@@ -9,26 +9,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 </head>
 <body>
-<header id="header">
-    <img src="/assets/therapass-logo.png" alt="TheraPass Logo">
-</header>
-<section id="hero">
-    <div class="left-column">
-        <h1 id="hero-title">GET YOUR ESA LETTER THREE WAYS</h1>
-        <p id="hero-subtitle">With TheraPass, you can instantly connect with an ESA therapist of your choice through
-            text message, phone, video, or mobile video to obtain your ESA letter. You'll receive your ESA letter in PDF
-            format without any waiting time, and it's issued by a state-licensed therapist, making it valid for both
-            housing and travel purposes.</p>
-        <div class="three-ways-container">
-            <div class="three-ways"><div class="icon-wrapper"><i class="fa-solid fa-message three-way-icon"></i></div>Text</div>
-            <div class="three-ways"><div class="icon-wrapper"><i class="fa-solid fa-video three-way-icon"></i></div>Video</div>
-            <div class="three-ways"><div class="icon-wrapper"><i class="fa-solid fa-phone three-way-icon"></i></div>Phone</div>
+<div class="wrapper">
+    <header id="header">
+        <img src="/assets/therapass-logo.png" alt="TheraPass Logo">
+    </header>
+    <section id="hero">
+        <div class="left-column">
+            <h1 id="hero-title">GET YOUR ESA LETTER THREE WAYS</h1>
+            <p id="hero-subtitle">With TheraPass, you can instantly connect with an ESA therapist of your choice through
+                text message, phone, video, or mobile video to obtain your ESA letter. You'll receive your ESA letter in
+                PDF
+                format without any waiting time, and it's issued by a state-licensed therapist, making it valid for both
+                housing and travel purposes.</p>
+            <div class="three-ways-container">
+                <div class="three-ways">
+                    <div class="icon-wrapper"><i class="fa-solid fa-message three-way-icon"></i></div>
+                    Text
+                </div>
+                <div class="three-ways">
+                    <div class="icon-wrapper"><i class="fa-solid fa-video three-way-icon"></i></div>
+                    Video
+                </div>
+                <div class="three-ways">
+                    <div class="icon-wrapper"><i class="fa-solid fa-phone three-way-icon"></i></div>
+                    Phone
+                </div>
+            </div>
+            <form class="search-form">
+                <div class="input-container">
+                    <input type="text" name="query" placeholder="Enter your city / zip" class="search-input">
+                    <img src="/assets/search.svg" alt="Search" class="search-icon">
+                </div>
+                <input type="submit" value="CONNECT - GET ESA NOW" class="search-button">
+            </form>
+
+
         </div>
-        <form class="search-form">
+        <div class="right-column">
+            <img src="/assets/phone-mockups.png" alt="TheraPass Phone MockUps" class="phone-mockups">
+            <img src="/assets/phone-mockups-tablet.png" alt="TheraPass Phone MockUps" class="phone-mockups-tablet">
+        </div>
+
+        <form class="search-form search-form-tablet">
             <div class="input-container">
                 <input type="text" name="query" placeholder="Enter your city / zip" class="search-input">
                 <img src="/assets/search.svg" alt="Search" class="search-icon">
@@ -36,67 +64,53 @@
             <input type="submit" value="CONNECT - GET ESA NOW" class="search-button">
         </form>
 
-
+    </section>
+    <section id="bottom-bar">
+        <div id="bottom-bar-wrapper">
+            <div class="stat-container">
+                <p class="top-stat">+2 million</p>
+                <p class="bottom-stat">Mental Health Assessments</p>
+            </div>
+            <div class="stat-container">
+                <p class="top-stat">+600,000</p>
+                <p class="bottom-stat">Mental Health Professionals</p>
+            </div>
+            <div class="stat-container">
+                <p class="top-stat">+6</p>
+                <p class="bottom-stat">Years in Business</p>
+            </div>
+            <div class="stat-container">
+                <p class="top-stat">+200,000</p>
+                <p class="bottom-stat">Satisfied Customers</p>
+            </div>
+        </div>
+    </section>
+    <section id="bottom-bar-tablet">
+        <div id="bottom-bar-wrapper-tablet">
+            <div class="stat-container">
+                <p class="top-stat">+2 million</p>
+                <p class="bottom-stat">Mental Health Assessments</p>
+            </div>
+            <div class="stat-container">
+                <p class="top-stat">+600,000</p>
+                <p class="bottom-stat">Mental Health Professionals</p>
+            </div>
+            <div class="stat-container">
+                <p class="top-stat">+6</p>
+                <p class="bottom-stat">Years in Business</p>
+            </div>
+            <div class="stat-container">
+                <p class="top-stat">+200,000</p>
+                <p class="bottom-stat">Satisfied Customers</p>
+            </div>
+        </div>
+    </section>
+    <div class="top-right-bg">
+        <img src="/assets/bg1.svg" alt="Background Decoration Image" id="right-bg">
     </div>
-    <div class="right-column">
-        <img src="/assets/phone-mockups.png" alt="TheraPass Phone MockUps" class="phone-mockups">
-        <img src="/assets/phone-mockups-tablet.png" alt="TheraPass Phone MockUps" class="phone-mockups-tablet">
+    <div class="bottom-left-bg">
+        <img src="/assets/bg2.svg" alt="Background Decoration Image" id="left-bg">
     </div>
-
-    <form class="search-form search-form-tablet">
-        <div class="input-container">
-            <input type="text" name="query" placeholder="Enter your city / zip" class="search-input">
-            <img src="/assets/search.svg" alt="Search" class="search-icon">
-        </div>
-        <input type="submit" value="CONNECT - GET ESA NOW" class="search-button">
-    </form>
-
-</section>
-<section id="bottom-bar">
-    <div id="bottom-bar-wrapper">
-        <div class="stat-container">
-            <p class="top-stat">+2 million</p>
-            <p class="bottom-stat">Mental Health Assessments</p>
-        </div>
-        <div class="stat-container">
-            <p class="top-stat">+600,000</p>
-            <p class="bottom-stat">Mental Health Professionals</p>
-        </div>
-        <div class="stat-container">
-            <p class="top-stat">+6</p>
-            <p class="bottom-stat">Years in Business</p>
-        </div>
-        <div class="stat-container">
-            <p class="top-stat">+200,000</p>
-            <p class="bottom-stat">Satisfied Customers</p>
-        </div>
-    </div>
-</section>
-<section id="bottom-bar-tablet">
-    <div id="bottom-bar-wrapper-tablet">
-        <div class="stat-container">
-            <p class="top-stat">+2 million</p>
-            <p class="bottom-stat">Mental Health Assessments</p>
-        </div>
-        <div class="stat-container">
-            <p class="top-stat">+600,000</p>
-            <p class="bottom-stat">Mental Health Professionals</p>
-        </div>
-        <div class="stat-container">
-            <p class="top-stat">+6</p>
-            <p class="bottom-stat">Years in Business</p>
-        </div>
-        <div class="stat-container">
-            <p class="top-stat">+200,000</p>
-            <p class="bottom-stat">Satisfied Customers</p>
-        </div>
-    </div>
-</section>
-<div class="top-right-bg">
-    <img src="/assets/bg1.svg" alt="Background Decoration Image" id="right-bg">
-</div>
-<div class="bottom-left-bg">
-    <img src="/assets/bg2.svg" alt="Background Decoration Image" id="left-bg">
 </div>
 </body>
 </html>
